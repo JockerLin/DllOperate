@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DependenceTest", "DependenceTest\DependenceTest.vcxproj", "{6BF0713B-EB8B-45AE-BB9D-EE130AD1E3CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtClassLibraryA", "QtClassLibraryA\QtClassLibraryA.vcxproj", "{905985D4-2838-4104-A09F-3700BA455C99}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtClassLibraryBC", "QtClassLibraryBC\QtClassLibraryBC.vcxproj", "{184FA20D-D61C-40A0-BC1A-E9453E83537A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtClassLibraryD", "QtClassLibraryD\QtClassLibraryD.vcxproj", "{76E57E70-DA65-4C1A-A632-7226C59F0E55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{403DF207-C2DE-4AC0-9289-BE2F61F4B17D}"
+	ProjectSection(SolutionItems) = preProject
+		exportlib.h = exportlib.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BF0713B-EB8B-45AE-BB9D-EE130AD1E3CE}.Debug|x64.ActiveCfg = Debug|x64
+		{6BF0713B-EB8B-45AE-BB9D-EE130AD1E3CE}.Debug|x64.Build.0 = Debug|x64
+		{6BF0713B-EB8B-45AE-BB9D-EE130AD1E3CE}.Release|x64.ActiveCfg = Release|x64
+		{6BF0713B-EB8B-45AE-BB9D-EE130AD1E3CE}.Release|x64.Build.0 = Release|x64
+		{905985D4-2838-4104-A09F-3700BA455C99}.Debug|x64.ActiveCfg = Debug|x64
+		{905985D4-2838-4104-A09F-3700BA455C99}.Debug|x64.Build.0 = Debug|x64
+		{905985D4-2838-4104-A09F-3700BA455C99}.Release|x64.ActiveCfg = Release|x64
+		{905985D4-2838-4104-A09F-3700BA455C99}.Release|x64.Build.0 = Release|x64
+		{184FA20D-D61C-40A0-BC1A-E9453E83537A}.Debug|x64.ActiveCfg = Debug|x64
+		{184FA20D-D61C-40A0-BC1A-E9453E83537A}.Debug|x64.Build.0 = Debug|x64
+		{184FA20D-D61C-40A0-BC1A-E9453E83537A}.Release|x64.ActiveCfg = Release|x64
+		{184FA20D-D61C-40A0-BC1A-E9453E83537A}.Release|x64.Build.0 = Release|x64
+		{76E57E70-DA65-4C1A-A632-7226C59F0E55}.Debug|x64.ActiveCfg = Debug|x64
+		{76E57E70-DA65-4C1A-A632-7226C59F0E55}.Debug|x64.Build.0 = Debug|x64
+		{76E57E70-DA65-4C1A-A632-7226C59F0E55}.Release|x64.ActiveCfg = Release|x64
+		{76E57E70-DA65-4C1A-A632-7226C59F0E55}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03D918D3-2C67-4E3C-AF81-291C791979C2}
+	EndGlobalSection
+EndGlobal
