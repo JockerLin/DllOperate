@@ -61,12 +61,12 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;../QtClassLibraryA;$(SolutionDir)QtClassLibraryBC;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)QtClassLibraryA;$(SolutionDir)QtClassLibraryBC;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>
       </AdditionalOptions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>QtClassLibraryA.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>QtClassLibraryA.lib;QtClassLibraryBC.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
