@@ -3,8 +3,8 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_DependenceTest.h"
 //#include "../QtClassLibraryA/QtClassLibraryA.h"
-#include "QtClassLibraryA.h"
-#include "QtClassLibraryBC.h"
+
+
 #include "windows.h"
 #include "qdebug.h"
 

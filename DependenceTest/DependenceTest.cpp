@@ -3,13 +3,23 @@
 
 // #pragma comment(lib, "QtClassLibraryBC.lib")
 
+// 测试1 测试环境
+#pragma comment(lib,"QtClassLibraryA.lib")
+#include "QtClassLibraryA.h"
+
+// 测试2 
+#pragma comment(lib,"QtClassLibraryBC.lib")
+#include "QtClassLibraryBC.h"
+
+// 测试3
+
 DependenceTest::DependenceTest(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
 
 
-	// -----------------------------------------------------隐式调用1
+	// -----------------------测试A------------------------------隐式调用1
 	// 
 	/* 使用工程配置 需要源码
 	---引用项目QtClassLibraryA
@@ -20,11 +30,12 @@ DependenceTest::DependenceTest(QWidget *parent)
 	连接器/输入/添加依赖项	QtClassLibraryA.lib;
 	DependenceTest.h		#include "QtClassLibraryA.h"
 	*/
+	
 	QtClassLibraryA qcla;
 	qcla.lib_a = 223;
-
-
-	// -----------------------------------------------------显示调用1 静态调用需要用到第三方的文件：.h.dll.lib
+	
+	
+	// -----------------------测试B------------------------------显示调用1 静态调用需要用到第三方的文件：.h.dll.lib
 	// 程序是如何判断需要哪个类的dll呢？
 	// dll 导入
 	/* 使用工程配置 需要源码
@@ -40,7 +51,7 @@ DependenceTest::DependenceTest(QWidget *parent)
 	QtClassLibraryBC bc_by_dll;
 	bc_by_dll.lib_bc = 998;
 
-	// -----------------------------------------------------显示调用2 只有.dll文件时 同时需要exportlib.h文件 ok 
+	// ----------------------测试C-------------------------------显示调用2 只有.dll文件时 同时需要exportlib.h文件 ok 
 	/* 使用工程配置 需要源码
 	---引用项目QtClassLibraryBC
 	常规/配置类型/动态库(.dll)
