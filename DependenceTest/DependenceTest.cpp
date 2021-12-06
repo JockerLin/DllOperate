@@ -40,7 +40,7 @@ DependenceTest::DependenceTest(QWidget *parent)
 	QtClassLibraryBC bc_by_dll;
 	bc_by_dll.lib_bc = 998;
 
-	// -----------------------------------------------------显示调用2 只有.dll文件时 ok
+	// -----------------------------------------------------显示调用2 只有.dll文件时 同时需要exportlib.h文件 ok 
 	/* 使用工程配置 需要源码
 	---引用项目QtClassLibraryBC
 	常规/配置类型/动态库(.dll)
